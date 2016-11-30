@@ -1,0 +1,54 @@
+@charset 'utf-8';
+body {
+	margin: 0;
+	padding: 0;
+}
+/*自定义字体*/
+@font-face {
+	/*字体文件路径*/
+	src:url(../lishu.ttf);
+	/*自定义字体名称*/
+	font-family: lishu;
+}
+body {
+	font-family: lishu;
+}
+
+/*标题*/
+#biaoti {
+	width: 150px;
+	height: 69px;
+	font-size: 3.5em;
+	color: #fff;
+	margin: 0 auto;
+	margin-top: 3.2em;
+}
+/*导航栏*/
+.container {
+	font-size: 30px;
+}
+/*内容区*/
+.row {
+	font-size: 15px;
+}
+.row h4 {
+	font-size: 20px;
+	font-weight: bold;
+}
+/* 产品列表标题 */
+.page-header {
+	border:none;
+	/*width: 183px;*/
+	color: #fff;
+	background: green;
+	border-radius: 10px;
+}
+/* 
+
+防止文字描述过多
+
+*/
+.caption p:first-of-type {
+	height: 88px;
+	overflow: hidden;
+}

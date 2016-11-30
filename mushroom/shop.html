@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>购物车</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel='stylesheet' type='text/css' href="css/ysg.css">
+	<link rel="stylesheet" type="text/css" href="css/shop.css">
+</head>
+<body style="background:#fff;">
+
+	<!-- 购物车头部banner开始 -->
+	<div class="banner" style='background:url(images/gwc.jpg)center no-repeat;background-size:cover;'>
+		<div class="container">
+			<div class="banner-info text-center">
+				<a href="index.html"><h1>等候多时</h1></a>
+				<div class="strip"></div>
+				<h1 style='font-weight:bold;'>天然品味,只为健康生活</h1>
+			</div>
+		</div>
+	</div>
+	<!-- 购物车头部banner结束 -->
+
+	<!-- 购物车开始 -->
+	<div class="ct-pageWrapper">
+		<main>
+			<div class="container">
+
+				<div class="row">
+					<!-- 文字区域开始 -->
+					<div id="left" class="col-md-3" style="float:left;">
+						<div class="widget">
+							<h2 class="widget-header"><h1>购物车</h1></h2>
+							<!-- 支付的钱数 -->
+							<div class="ct-cart"></div>
+						</div>
+						<div class="widget">
+							<!-- <h2 class="widget-header">购物车</h2> -->
+							<!-- 支付的钱数 -->
+							<!-- <div class="ct-cart"></div> -->
+							<!-- <img src="images/P-houtougu.jpg" alt="" class="img-responsive" style="margin-bottom:10px;">
+							<img src="images/P-houtougu.jpg" alt="" class="img-responsive" style="margin-bottom:10px;">
+							<img src="images/P-houtougu.jpg" alt="" class="img-responsive" style="margin-bottom:10px;">
+							<img src="images/P-houtougu.jpg" alt="" class="img-responsive" style="margin-bottom:10px;">
+							<img src="images/P-houtougu.jpg" alt="" class="img-responsive" style="margin-bottom:10px;">
+							<img src="images/P-houtougu.jpg" alt="" class="img-responsive" style="margin-bottom:10px;"> -->
+						</div>
+						<!-- 订单区域+ -->
+						<input type="hidden" id='textarea'>
+					</div>
+					<!-- 文字区域结束 -->
+					
+
+					<!-- 商品列表区域开始 -->
+					<div class="col-md-9" style="float:right; position:relative;">
+						<div class="row" id='wrapper'>	
+
+							<!--
+
+
+							产品列表容器
+
+
+							-->
+						</div>
+					</div>
+					<!-- 商品列表区域结束 -->
+				</div>
+			</div>
+		</main>
+		<!-- footer区开始 -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<p style='color:#000;'>
+							Copyright &copy;2016 - 2017 syj.com All Rights Reserved
+						</p>
+						<ul class="social-icons">
+							<li><a href="index.html" class="fa fa-home" title='回到主页'></a></li>
+							<li><a href="javascript:;" class="fa fa-weixin" title='微信号:herb121'></a></li>
+							<li><a href="javascript:;" class="fa fa-qq" title='qq号:764833128'></a></li>
+							<li><a href="javascript:;" class="fa fa-weibo" title='weibo：hmz521'></a></li>
+							<li><a href="ProList.html" class="fa fa-book" title='回到商品列表'></a></li>
+							<li><a href="javascript:;" class="fa fa-github"></a></li>
+							<li><a href="javascript:;" class="fa fa-behance"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer区结束 -->
+	</div>
+
+	<!-- 购物车结束 -->
+
+	<!-- 回到顶部按钮 -->
+	<div id='toTop'>
+
+	</div>
+
+
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/shop.min.js"></script>
+	<script type="text/javascript" src="js/layer/layer.js"></script>
+	<script src="js/jquery.backstretch.min.js"></script>
+	<script type="text/javascript">
+		
+		
+		$(document).ready(function(){
+			/*
+			 回到顶部按钮
+			 */
+			$(window).scroll(function() {
+				var sTop = $(window).scrollTop();
+				//显示回到顶部
+				if(sTop >= 340) {
+					$('#toTop').fadeIn(500);
+					$('#left').attr('position', 'fixed');
+				}else {
+					$('#toTop').fadeOut(500);
+				}
+			});
+			//单击回到顶部按钮，回到顶部
+			$('#toTop').click(function(event) {
+				$('html,body').animate({scrollTop:0},1000);
+			});
+			// 背景切换
+			$(function(){
+			    jQuery(document).ready(function() {
+					$('body').backstretch([
+				 		 "images/shop_bg.jpg"
+				 			], 	{duration: 3200, fade: 1300});
+					});
+			});
+
+			//同步设置
+			$.ajaxSettings.async = false;
+
+			// 用$.getJSON获得json对象
+			$.getJSON('production.json', function(data) {				
+				
+				var html = '';//拼接html字符串
+				var wrapper = $('#wrapper');
+				// 遍历json数组
+				$.each(data,function(index, el) {
+
+					//拼接html代码
+					html = '<div class="col-sm-3">';
+					html += '	<div class="ct-product">';
+					html += '       <div class="image"><img src="images_shop/' + el.img +'.jpg" alt=""></div>';
+					html += '        <div class="inner"><a href="#" class="btn btn-motive ct-product-button"><i class="fa fa-shopping-cart"></i></a>';
+					html += '   		<h2 class="ct-product-title">' + el.name + '</h2>';
+					html += '    		<p class="ct-product-description">' + el.content + '</p><span class="ct-product-price">' + el.price  + '</span>';
+					html += '    </div>';
+					html += '    </div>';
+					html += '</div>';
+
+					// 追加到列表容器中
+					wrapper.append(html);
+
+				});				
+
+			});
+
+			// 购物车
+			$('body').ctshop({
+				currency: '$',
+				paypal: {
+					currency_code: 'EUR'
+				}
+			});
+
+
+			//点击结算事件
+			$('.ct-cart-checkout').click(function(event) {
+				alert(items);
+				// var money = $('.ct-cart-total').text();
+				// var name = $('.ct-cart-name').text() + $('.ct-cart-input').attr('value');
+				// // var number = $('.ct-cart-input').attr('value');
+				// var s = $('.fadeIn').text();
+				
+				// $('.textarea').attr('type','textarea');
+				// // $('.textarea').value = name;
+				// // layer.msg(name);
+				// var a = $('.widget').text();
+				// alert(a);
+			});
+		});
+
+
+	</script>
+
+</body>;
+</html>

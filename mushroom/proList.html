@@ -1,0 +1,590 @@
+t<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商品列表</title>
+	<!-- 视口设置 -->
+	<meta name='viewport' content='width=device-width,initial-scale=1.0,minimum-scale=0.5,user-scalable=no'>
+	<!-- 引入bootstrap的css文件 -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!-- 引入index的css文件 -->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<!-- 引入prolist的css文件 -->
+	<link rel="stylesheet" type="text/css" href="css/proList.css">
+
+	<!-- IE优化 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- 判断，如果是IE9以下，引入兼容h5标签的js文件，注意空格的位置 -->
+	
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/html5shiv.min.js"></script>
+	<script type="text/javascript" src="js/respond.min.js"></script>
+	<![end if] -->
+
+	<!-- 引入jquery环境 -->
+	<script type="text/javascript" src='js/jquery.js'></script>
+
+	<!-- 引入bootstrap的js文件 -->
+	<script type="text/javascript" src='js/bootstrap.js'></script>
+
+</head>
+<body>
+	<!-- 标题开始 -->
+		<div id="biaoti">
+			菌菌网
+		</div>
+	<!-- 标题结束 -->
+	<!-- 导航条开始 -->
+	<nav class='navbar navbar-default' style='border:none;background:rgba(0,0,0,0);'>
+		<!-- 内部容器开始 -->
+		<div class="container" style='background:#983D3C;border-radius:10px;'>
+			<!-- 导航头部开始 -->
+			<div class="navbar-header">
+				<!-- 响应式的菜单按钮开始 -->
+				<button class='navbar-toggle collapsed' data-toggle='collapse' data-target='#navMenu'>
+					<span class='icon-bar'></span>
+					<span class='icon-bar'></span>
+					<span class='icon-bar'></span>
+				</button>
+				<!-- 响应式的菜单按钮结束 -->
+				<!-- logo开始 -->
+				<a href="#" class='navbar-brand'  style='color:#000;'>菌菌网</a>
+				<!-- logo结束 -->
+			</div>
+			<!-- 导航头部结束 -->
+			<!-- 导航菜单开始 -->
+			<div class="collapse navbar-collapse" id='navMenu'>
+				<!-- 菜单列表开始 -->
+				<ul class="nav navbar-nav">
+					<li><a href="index.html"  style='color:#000;'>菌主页</a></li>
+					<!-- <li><a href="#">菌列表</a></li> -->
+					<!-- <li><a href="#">菌商品</a></li> -->
+					<li><a href="YangShengGuan.html"  style='color:#000;'>菌烹饪</a></li>
+					<li><a href="YangShengGuan.html"  style='color:#000;'>菌养生馆</a></li>
+				</ul>
+				<!-- 菜单列表结束 -->
+				<!-- 普通文本开始 -->
+				<!-- <p class="navbar-text">
+					当前用户：
+					<a href="#" class='navbar-link'>jack</a>
+				</p> -->
+				<!-- 普通文本结束 -->
+				<!-- 退出登录开始 -->
+				<button class='btn btn-danger navbar-btn navbar-right' style='background:green;border:none;'><a href="shop.html">点我购买</a></button>
+				<!-- 退出登录结束 -->
+			</div>
+			<!-- 导航菜单结束 -->
+		</div>
+		<!-- 内部容器结束 -->
+	</nav>
+	<!-- 导航条结束 -->
+	<!-- 产品列表标题开始 -->
+	<div class='container' >
+		<h1 class="page-header">
+			原生菌产品
+		</h1>
+	</div>
+	<!-- 产品列表标题结束 -->
+	<!-- 原生产品主内容开始 -->
+	<div class="container">		
+		<div class="row" id='wrapper1'>			
+			<!-- <div class="col-lg-3 col-xs-4">
+				<div class="thumbnail text-center">
+
+					<img src="images/P-koumo.jpg" alt="">
+					<div class="caption">
+						<h4>口菇</h4>
+						<p>
+							此种菌菌肉肥厚，香气浓郁，味道鲜美，是一种名贵的野生食用菌。					含有丰富的维生素B1、B2、C及PP。松口蘑具有强身，益肠胃，止痛，理气化痰之医药功效。 
+						</p>
+						<p>
+							<a href="javascript:;" >$16/kg</a>
+							<a href="shop.html" class='btn btn-info'>购买</a>
+						</p>
+					</div>
+				</div>
+			</div> -->
+		</div>
+	</div>
+	<!-- 原生产品主内容结束 -->
+	<!-- 产品列表标题开始 -->
+	<div class='container'>
+		<h1 class="page-header">
+			菌商品
+		</h1>
+	</div>
+	<!-- 产品列表标题结束 -->
+	<!-- 原生产品主内容开始 -->
+	<div class="container" style='min-height:400px;'>	
+		<div class="row">
+
+			<div class="col-lg-4">
+				<!-- 饮品面板组开始 -->
+				<div class="panel-group" id='panelGroup'>
+					<!-- 面板1 开始 -->
+					<div class="panel panel-success">
+						<div class="panel-heading">
+							<h4 class='panel-title'>
+								<a href="#one" >银耳珍希饮系列</a>
+							</h4>
+						</div>
+						<div id="one">
+							<div class="panel-body">
+								<img src="images/yin9.jpg" class='img-responsive'>
+								<p>
+									银耳珍的口味有：原味经典、希饮紫薯、希饮菠萝、希饮木瓜、希饮红枣。
+								</p>
+								<p>
+									古甜银耳羹，杯装银耳羹，是区别于现在市场上的咖啡奶茶等冲剂的新一代养生饮品，补气养血、丰胸美肤，明目养肝，健脑益消化，强身健体，明目助消化的作用是其它饮品所不可比拟的。春养生，夏补液， 秋滋润，冬暖胃！堪称杯装即冲饮品的革新！
+								</p>
+								<p>
+									时尚养生美容减肥
+								</p>
+								<p>
+									味道纯正好喝不腻
+								</p>
+								<p>
+									即冲即饮省时省力
+								</p>
+								<p style='color:#aa381e;'>
+									$9.00/18g/杯
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- 面板1 结束 -->
+					<!-- 面板2 开始 -->
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h4 class='panel-title'>
+								<a href="#two" data-toggle='collapse' data-parent='#panelGroup'>原味经典</a>
+							</h4>
+						</div>
+						<div id="two" class='panel-collapse collapse'>
+							<div class="panel-body">
+								<img src="images/yin1.jpg" class='img-responsive'>
+							</div>
+						</div>
+					</div>
+					<!-- 面板2 结束 -->	
+					<!-- 面板3 开始 -->
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h4 class='panel-title'>
+								<a href="#three" data-toggle='collapse' data-parent='#panelGroup'>希饮紫薯</a>
+							</h4>
+						</div>
+						<div id="three" class='panel-collapse collapse'>
+							<div class="panel-body">
+								<img src="images/zishu.jpg" class='img-responsive'>
+							</div>
+						</div>
+					</div>
+					<!-- 面板3 结束 -->
+
+					<!-- 面板3 开始 -->
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h4 class='panel-title'>
+								<a href="#four" data-toggle='collapse' data-parent='#panelGroup'>希饮菠萝</a>
+							</h4>
+						</div>
+						<div id="four" class='panel-collapse collapse'>
+							<div class="panel-body">
+								<img src="images/boluo.jpg" class='img-responsive'>
+							</div>
+						</div>
+					</div>
+					<!-- 面板3 结束 -->
+					<!-- 面板3 开始 -->
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h4 class='panel-title'>
+								<a href="#five" data-toggle='collapse' data-parent='#panelGroup'>希饮木瓜</a>
+							</h4>
+						</div>
+						<div id="five" class='panel-collapse collapse'>
+							<div class="panel-body">
+								<img src="images/mugua.jpg" class='img-responsive'>
+							</div>
+						</div>
+					</div>
+					<!-- 面板3 结束 -->
+					<!-- 面板3 开始 -->
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h4 class='panel-title'>
+								<a href="#six" data-toggle='collapse' data-parent='#panelGroup'>希饮红枣</a>
+							</h4>
+						</div>
+						<div id="six" class='panel-collapse collapse'>
+							<div class="panel-body">
+								<img src="images/hongzao.jpg" class='img-responsive'>
+							</div>
+						</div>
+					</div>
+					<!-- 面板3 结束 -->
+
+
+					<!-- 面板3 开始 -->
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h4 class='panel-title'>
+								<a href="#seven" data-toggle='collapse' data-parent='#panelGroup'>希饮绿豆</a>
+							</h4>
+						</div>
+						<div id="seven" class='panel-collapse collapse'>
+							<div class="panel-body">
+								<img src="images/lvdou.jpg" class='img-responsive'>
+							</div>
+						</div>
+					</div>
+					<!-- 面板3 结束 -->	
+	
+				</div>
+				<!-- 饮品面板组结束 -->
+			</div>
+
+
+			<div class="col-lg-4">
+				<!-- 罐头面板组开始 -->
+				<div class="panel-group" id='panelGroup1'>
+					<!-- 面板1 开始 -->
+					<div class="panel panel-success">
+						<div class="panel-heading">
+							<h4 class='panel-title'>
+								<a href="#one1">罐头系列</a>
+							</h4>
+						</div>
+						<div id="one1">
+							<div class="panel-body">
+								<img src="images/guan.jpg" class='img-responsive'>				
+								<p>
+									一些具有肉质子实体的食用菌，是世界性的保健食品（Health food）或功能食品（Function food），其所含生物活性物质如高分子多糖体、β葡萄糖和RNA复合体、天然有机锗、核酸降解物、CAMP和三萜类化合物等，对维护人体健康有着更加重要的利用价值。				
+								</p>
+								<p>
+									近几年来，以食用菌为原料加工的食品及药物投放市场，从而食用菌加工工艺也得以发展，软罐头工艺兴起并较快发展
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- 面板1 结束 -->
+					<!-- 面板2 开始 -->
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h4 class='panel-title'>
+								<a href="#two1" data-toggle='collapse' data-parent='#panelGroup1'>蘑菇肉酱罐头</a>
+							</h4>
+						</div>
+						<div id="two1" class='panel-collapse collapse'>
+							<div class="panel-body">
+								<img src="images/guan3.jpg" class='img-responsive'>
+								<p>
+									配料为：杏鲍菇、水、牛肉、植物油、番茄酱、黄豆酱、白砂糖、食用盐、干红椒、味精等等
+								</p>
+								<p style='color:#aa381e;'>
+									$7/罐
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- 面板2 结束 -->	
+					<!-- 面板3 开始 -->
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h4 class='panel-title'>
+								<a href="#three1" data-toggle='collapse' data-parent='#panelGroup1'>松茸牛肉酱</a>
+							</h4>
+						</div>
+						<div id="three1" class='panel-collapse collapse'>
+							<div class="panel-body">
+								<img src="images/guan2.jpg" class='img-responsive'>
+								<p>
+									配料为：松茸、番茄酱、牛肉、植物油、白砂糖、食用盐、干红椒、味精等等
+								</p>
+								<p style='color:#aa381e;'>
+									$7/罐
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- 面板3 结束 -->	
+					<!-- 面板4 开始 -->
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h4 class='panel-title'>
+								<a href="#four1" data-toggle='collapse' data-parent='#panelGroup1'>蘑菇松茸酱</a>
+							</h4>
+						</div>
+						<div id="four1" class='panel-collapse collapse'>
+							<div class="panel-body">
+								<img src="images/guan1.jpg" class='img-responsive'>
+								<p>
+									配料为：松茸，番茄酱，鸡肉，植物油，豆豉，干红椒，食用盐，白砂糖，味精等等
+								</p>
+								<p style='color:#aa381e;'>
+									$7/罐
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- 面板4 结束 -->	
+					<!-- 面板5 开始 -->
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h4 class='panel-title'>
+								<a href="#five1" data-toggle='collapse' data-parent='#panelGroup1'>爆炒香菇酱</a>
+							</h4>
+						</div>
+						<div id="five1" class='panel-collapse collapse'>
+							<div class="panel-body">
+								<img src="images/guan4.jpg" class='img-responsive'>
+								<p>
+									配料为：香菇，番茄酱，鸡肉，植物油，豆豉，干红椒，食用盐，白砂糖，味精等等
+								</p>
+								<p style='color:#aa381e;'>
+									$8.5/罐
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- 面板5 结束 -->	
+					<!-- 面板6 开始 -->
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h4 class='panel-title'>
+								<a href="#six1" data-toggle='collapse' data-parent='#panelGroup1'>爆炒什锦菇</a>
+							</h4>
+						</div>
+						<div id="six1" class='panel-collapse collapse'>
+							<div class="panel-body">
+								<img src="images/guan5.jpg" class='img-responsive'>
+								<p>
+									配料为：滑子菇，平菇，香菇，植物油，豆豉，干红椒，食用盐，白砂糖，味精等等
+								</p>
+								<p style='color:#aa381e;'>
+									$8.5/罐
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- 面板6 结束 -->	
+					<!-- 面板7 开始 -->
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h4 class='panel-title'>
+								<a href="#seven1" data-toggle='collapse' data-parent='#panelGroup1'>爆炒平菇</a>
+							</h4>
+						</div>
+						<div id="seven1" class='panel-collapse collapse'>
+							<div class="panel-body">
+								<img src="images/guan6.jpg" class='img-responsive'>
+								<p>
+									配料为：平菇，植物油，植物油，豆豉，干红椒，食用盐，白砂糖，味精等等
+								</p>
+								<p style='color:#aa381e;'>
+									$8.5/罐
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- 面板7 结束 -->	
+				</div>
+				<!-- 罐头面板组结束 -->
+			</div>
+
+
+			<div class="col-lg-4">
+				<!-- 小吃面板组开始 -->
+				<div class="panel-group" id='panelGroup2'>
+					<!-- 面板1 开始 -->
+					<div class="panel panel-success">
+						<div class="panel-heading">
+							<h4 class='panel-title'>
+								<a href="#one2">爱上菇脆系列</a>
+							</h4>
+						</div>
+						<div id="one2">
+							<div class="panel-body">
+								<img src="images/gu10.jpg" class='img-responsive'>
+								<p style='color:#aa381e;'>每份20袋，每袋13.5g</p>
+								<p style='color:#aa381e;'>$49/袋</p>
+							</div>
+						</div>
+					</div>
+					<!-- 面板1 结束 -->
+					<!-- 面板2 开始 -->
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h4 class='panel-title'>
+								<a href="#two2" data-toggle='collapse' data-parent='#panelGroup2'>经典原味</a>
+							</h4>
+						</div>
+						<div id="two2" class='panel-collapse collapse'>
+							<div class="panel-body">
+								<img src="images/gu1.jpg" class='img-responsive'>
+								<p>
+									带有原生态农场的清爽口感，松脆可口，少少的盐味带出菇中原有的鲜味和香气，原来味道就是这么纯粹！
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- 面板2 结束 -->	
+					<!-- 面板3 开始 -->
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h4 class='panel-title'>
+								<a href="#three2" data-toggle='collapse' data-parent='#panelGroup2'>黑胡椒味</a>
+							</h4>
+						</div>
+						<div id="three2" class='panel-collapse collapse'>
+							<div class="panel-body">
+								<img src="images/gu2.jpg" class='img-responsive'>
+								<p>
+									浓郁的黑椒香气，微辣带麻的口感，突出蘑菇的咸、香、鲜的口感，每一粒黑胡椒香料都渗入蘑菇当中，喷香四溢，让您好吃不停口
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- 面板3 结束 -->	
+					<!-- 面板4 开始 -->
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h4 class='panel-title'>
+								<a href="#four2" data-toggle='collapse' data-parent='#panelGroup2'>多汁番茄味</a>
+							</h4>
+						</div>
+						<div id="four2" class='panel-collapse collapse'>
+							<div class="panel-body">
+								<img src="images/gu6.jpg" class='img-responsive'>
+								<p>
+									番茄饱满多汁，番茄粉更生津，酸酸甜甜，将丰沛的阳光也一起分享
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- 面板4 结束 -->	
+					<!-- 面板5 开始 -->
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h4 class='panel-title'>
+								<a href="#five2" data-toggle='collapse' data-parent='#panelGroup2'>营养海苔味</a>
+							</h4>
+						</div>
+						<div id="five2" class='panel-collapse collapse'>
+							<div class="panel-body">
+								<img src="images/gu7.jpg" class='img-responsive'>
+								<p>
+									海苔热量低，纤维素含量高，与蘑菇的美味相得益彰
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- 面板5 结束 -->
+				</div>
+				<!-- 小吃面板组结束 -->
+			</div>
+		</div>		
+	</div>
+	<!-- 原生产品主内容结束 -->
+	<!-- 网页底部开始 -->
+	<footer  style='background:rgba(0,0,0,0); color:#000;'>
+		<div class="container" style='background:#983D3C;border-radius:20px;'>
+			<div class="row">
+				<div class="col-md-6">
+					<h4 class="text-center" style='font-size:2em;'>养生食用菌网</h4>
+
+				</div>
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-xs-4" style='font-size:1.5em;'>
+							<p><span>xx网络科技有限公司 xx工作室 xxICP备10215773号-30</span></p>
+						</div>
+						<div class="col-xs-4" style='font-size:1.5em;'>
+							<p><span>大连医科大学中山学院6号公寓2F  13795141214</span></p>
+						</div>
+						<div class="col-xs-4" style='font-size:1.5em;'>
+							<p><span style="font-family:arial;">Copyright &copy; </span>  2016 - 2017 syj.com All Rights Reserved</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- 网页底部结束 -->
+	<hr>
+	<p class='text-center' style='font-size:2em; color:#000;'>版权所有@2016</p>
+	
+	<!-- 回到顶部按钮 -->
+	<div id='toTop'>
+		
+	</div>
+	<script src="js/jquery.backstretch.min.js"></script>
+	<script type="text/javascript">
+		/*
+			回到顶部按钮
+		*/
+		$(document).ready(function(){
+			$(window).scroll(function() {
+				var sTop = $(window).scrollTop();
+				//显示回到顶部
+				if(sTop >= 340) {
+					$('#toTop').fadeIn(500);
+				}else {
+					$('#toTop').fadeOut(500);
+				}
+			});
+			//单击回到顶部按钮，回到顶部
+			$('#toTop').click(function(event) {
+				$('html,body').animate({scrollTop:0},1000);
+			});
+
+			/*
+
+				ajax动态生成商品列表
+
+			*/
+			// 用$.getJSON获得json对象
+			$.getJSON('proList.json', function(data) {
+				
+				var html = '';//拼接html字符串
+				var wrapper = $('#wrapper1');
+				// 遍历json数组
+				$.each(data,function(index,el) {
+
+					//拼接html代码
+					html = '<div class="col-lg-3 col-xs-6">';
+					html += '	<div class="thumbnail text-center">';
+					html += '       <img src="images/' + el.img + '.jpg" alt="">';
+					html += '       <div class="caption">';
+					html += '   		<h4>' + el.title + '</h4>';
+					html += '    		<p>' + el.content + '</p>';
+					html += '    		<p>';
+					html += '				<a href="javascript:;" >'+ el.price +'</a>';
+					html += '				<a href="shop.html" class="btn btn-info">购买</a>';
+					html += '			</p>';
+					html += '    	</div>';
+					html += '    </div>';
+					html += '</div>';
+
+					// 追加到列表容器中
+					wrapper.append(html);
+
+				});
+
+			});
+
+		});
+		// 背景切换
+		$(function(){
+		    jQuery(document).ready(function() {
+				$('body').backstretch([
+			 		 "images/bg.jpg"
+			 			], 	{duration: 3200, fade: 1300});
+				});
+		});
+	</script>
+	
+</body>
+</html>

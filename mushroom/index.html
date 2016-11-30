@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>食用菌主页</title>
+	<!-- 视口设置 -->
+	<meta name='viewport' content='width=device-width,initial-scale=1.0,minimum-scale=0.5,user-scalable=no'>
+	<!-- 引入bootstrap的css文件 -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!-- IE优化 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 引入全局配置css -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<!-- 引入主页css文件 -->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<!-- 引入swiper的css -->
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<!-- 引入网络图标css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- 引入jq文件 -->
+	<script type="text/javascript" src='js/jquery.js'></script>
+</head>
+<body>
+	<!-- 标题开始 -->
+	<div id="biaoti">
+		菌菌网
+	</div>
+	<!-- 标题结束 -->
+	<!-- 登陆条开始 -->
+	 <div id="loginBar">
+	 	<div class='logcheck fl'>
+	 		<a href="#">登陆/login</a>
+	 	</div>
+	 	<div class='logcheck fr'>
+	 		<a href="#">退出/checkout</a>
+	 	</div>
+	 </div>
+	<!-- 登陆条结束 -->
+	<!-- 导航条开始 -->
+	<div id="nav">
+		<ul>
+			<li><a href="index.html">菌主页-</a></li>
+			<li><a href="proList.html">菌列表-</a></li>
+			<li><a href="proList.html">菌商品-</a></li>
+			<li><a href="YangShengGuan.html">菌烹饪-</a></li>
+			<li><a href="YangShengGuan.html">菌养生馆</a></li>
+		</ul>
+	</div>
+	<!-- 导航条结束-->
+	<!-- 大banner区开始 -->
+	<div id="bannerWrapper">
+		<div id="banner">
+			<!-- 滑动banner开始-->
+		    <div class="swiper-container">
+		        <div class="swiper-wrapper">
+		            <div class="swiper-slide" style="background-image:url(images/a.jpg)"></div>
+		            <div class="swiper-slide" style="background-image:url(images/b.jpg)"></div>
+		            <div class="swiper-slide" style="background-image:url(images/c.jpg)"></div>
+		            <div class="swiper-slide" style="background-image:url(images/d.jpg)"></div>
+		            <div class="swiper-slide" style="background-image:url(images/e.jpg)"></div>
+		            <div class="swiper-slide" style="background-image:url(images/s6.jpg)"></div>
+		            <div class="swiper-slide" style="background-image:url(images/s7.jpg)"></div>
+		            <div class="swiper-slide" style="background-image:url(images/s8.jpg)"></div>
+		        </div>
+		        <!-- Add Pagination -->
+		        <div class="swiper-pagination swiper-pagination-white"></div>
+		        <!-- Add Arrows -->
+		        <div class="swiper-button-next swiper-button-white"></div>
+		        <div class="swiper-button-prev swiper-button-white"></div>
+		    </div>
+		    <!-- 滑动banner结束-->
+		</div>
+	
+	</div>
+	<!-- 大banner区结束 -->
+	<!-- 主内容区开始 -->
+	<div id="contentWrapper">
+		<div id="content">
+			<!-- 左侧文字区 -->
+			<div id="leftBar">
+				<div id="popular">
+					<h3>受欢迎商品</h3>
+					<p>在这里，我们为您提供最受欢迎商品，供您参考，希望它们能获得您的喜爱</p>
+				</div>
+				<!-- 文字列表 -->
+				<div id="list1">
+					<ul>
+						<li><a href="proList.html"><span> >> </span>&nbsp;&nbsp;商品预览</a></li>
+						<li><a href="shop.html"><span> >> </span>&nbsp;&nbsp;直接购买</a></li>
+						<li><a href="aboutUs.html"><span> >> </span>&nbsp;&nbsp;关于我们</a></li>
+						<li><a href="aboutUs.html"><span> >> </span>&nbsp;&nbsp;加入我们</a></li>
+					</ul>
+				</div>
+				<!-- 预订方式 -->
+				<div id="order">
+					<h3>网上预订/电话预订</h3>
+					<p>您可以通过拨打下方电话或发送email进行预订，我们会及时为您安排发货，请标明您的地址</p>
+				</div>
+				<!-- 方式列表 -->
+				<div id="list2">
+					<ul>
+						<li><a href="#"><span class="icon icon-phone"></span>&nbsp;&nbsp;13795141214</a></li>
+						<li><a href="http://mail.10086.cn/"><span class="icon icon-envelop"></span>&nbsp;&nbsp;13795141214@139.com</a></li>
+					</ul>
+				</div>
+				<!-- 留下联系方式 -->
+			</div>
+			<!-- 右侧图片区 -->
+			<div id="rightBar">
+				<div id="imgWrapper">
+					<div id="imgPrice">
+						<div id="inner">
+							<div id="img1" class='img'></div>
+							<p>蘑菇</p>
+							<span>$30.9/kg</span>
+							<div id="detail">
+								<a href="proList.html">更多</a>
+							</div>
+							
+						</div>
+					</div>
+					<div id="imgPrice">
+						<div id="inner">
+							<div id="img2" class='img'></div>
+							<p>香菇</p>
+							<span>$30.9/kg</span>
+							<div id="detail">
+								<a href="proList.html">更多</a>
+							</div>						
+						</div>
+					</div>
+					<div id="imgPrice">
+						<div id="inner">
+							<div id="img3" class='img'></div>
+							<p>银耳</p>
+							<span>$30.9/kg</span>
+							<div id="detail">
+								<a href="proList.html">更多</a>
+							</div>						
+						</div>
+					</div>
+					<div id="imgPrice">
+						<div id="inner">
+							<div id="img4" class='img'></div>
+							<p>猴头菇</p>
+							<span>$30.9/kg</span>
+							<div id="detail">
+								<a href="proList.html">更多</a>
+							</div>									
+						</div>
+					</div>
+					<div id="imgPrice">
+						<div id="inner">
+							<div id="img5" class='img'></div>
+							<p>木耳</p>
+							<span>$30.9/kg</span>
+							<div id="detail">
+								<a href="proList.html">更多</a>
+							</div>						
+						</div>
+					</div>
+					<div id="imgPrice">
+						<div id="inner">
+							<div id="img6" class='img'></div>
+							<p>菌菌</p>
+							<span>$30.9/kg</span>
+							<div id="detail">
+								<a href="proList.html">更多</a>
+							</div>						
+						</div>
+					</div>
+				</div>
+				<!-- 产地介绍 -->
+				<div id="title">
+					产地介绍|||我们对您的承诺
+				</div>
+				<div id="chandijieshao1">
+					<!-- 文字遮罩 -->
+					<div id="chandijieshao2">
+						食用菌生产基地是:按照绿色有机食品生产基地模式，选择远离工业生产作业区，隔离条件好，植被覆盖率高。空气、水源无污染，精选有利于食用菌栽培的环境。同时交通便利，便于原料供应和产品配送的地点，严格按照绿色有机食品要求进行论证选点建设。
+					</div>
+					<!-- 文字遮罩 -->
+					<div id="chandijieshao3">
+						流水线生产，行业低价，售后有保证，折扣天天有！
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- 主内容区结束 -->
+	<!-- footer开始 -->
+	<div id="footerWrapper">
+		<div id="footer">
+			<div id='erweima' class='fl'>
+				<div id="saomiao">
+					<img src="images/erweima.jpg" alt="">
+					<span>请扫描二维码</span>
+				</div>
+			</div>
+			<div id="foot" class='fr'>
+				<p><span>xx网络科技有限公司 xx工作室 xxICP备10215773号-30</span></p>
+				<p><span>大连医科大学中山学院6号公寓2F  13795141214</span></p>
+				<p><span style="font-family:arial;">Copyright &copy; </span>  2016 - 2017 syj.com All Rights Reserved</p>
+			</div>					
+		</div>
+	</div>
+	<!-- footer结束 -->
+
+	<!-- 回到顶部按钮 -->
+	<div id='toTop'>
+		
+	</div>
+	<!-- 判断，如果是IE9以下，引入兼容h5标签的js文件，注意空格的位置 -->
+	
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/html5shiv.min.js"></script>
+	<script type="text/javascript" src="js/respond.min.js"></script>
+	<![end if] -->
+
+	<!-- 引入jquery环境 -->
+	<script type="text/javascript" src='js/jquery.js'></script>
+	<!-- 引入bootstrap的js文件 -->
+	<script type="text/javascript" src='js/bootstrap.js'></script>
+	<!-- 引入swiper的js -->
+	<script type="text/javascript" src='js/swiper.min.js'></script>
+	<!-- 引入主页js -->
+	<script type="text/javascript" src='js/index.js'></script>
+
+</body>
+</html>
